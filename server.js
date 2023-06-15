@@ -4,7 +4,7 @@ const https=require('https')
 
 const app=express()
 
-app.use(express.static(__dirname,{index:'signup.html'}))
+app.use(express.static(__dirname))
 app.use(express.urlencoded({extended:false}))
 
 app.listen(process.env.PORT || 3000,()=>{
